@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_ql_hoa_don"
+        android:icon="@drawable/hoadon"
+        android:title="Quản lý hóa đơn" />
+    <item
+        android:id="@+id/menu_ql_the_loai"
+        android:icon="@drawable/theloai"
+        android:title="Quản lý loại sản phẩm" />
+    <item
+        android:id="@+id/menu_ql_San_Pham"
+        android:icon="@drawable/sanpham"
+        android:title="Quản lý Sản phẩm" />
+    <item
+        android:id="@+id/menu_ql_taikhoan"
+        android:icon="@drawable/nhanvien"
+        android:title="Quản lý tài khoản" />
+    <group android:checkableBehavior="single">
+        <item android:title="Thống kê">
+            <menu>
+                <item
+                    android:id="@+id/menu_tk_DoanhThu"
+                    android:icon="@drawable/doanhthu"
+                    android:title="Doanh thu" />
+                <item
+                    android:id="@+id/menu_tk_top10_XuatKho"
+                    android:icon="@drawable/xuatkho"
+                    android:title="Top 10 sản phẩm xuất kho" />
+                <item
+                    android:id="@+id/menu_tk_top10_NhapKho"
+                    android:icon="@drawable/nhapkho"
+                    android:title="Top 10 sản phẩm nhập kho" />
+                <item
+                    android:id="@+id/menu_tk_TonKho"
+                    android:icon="@drawable/tonkho"
+                    android:title="Tồn kho" />
+            </menu>
+        </item>
+    </group>
+    <group android:checkableBehavior="single">
+        <item android:title="Người dùng">
+            <menu>
+                <item
+                    android:id="@+id/menu_doi_mat_khau"
+                    android:icon="@drawable/doimatkhau"
+                    android:title="Đổi mật khẩu" />
+                <item
+                    android:id="@+id/menu_dang_Xuat"
+                    android:icon="@drawable/logout"
+                    android:title="Đăng Xuất" />
+            </menu>
+        </item>
+    </group>
+</menu>
