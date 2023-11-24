@@ -4,7 +4,7 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/txt_tenSanPham_Top10_NhapKho"
+        android:id="@+id/tv_tenSanPham_Top10_NhapKho"
         android:layout_width="0dp"
         android:layout_weight="2"
         android:layout_height="wrap_content"
@@ -12,7 +12,7 @@
         android:textSize="18sp" />
 
     <TextView
-        android:id="@+id/txt_soLuong_Top10_NhapKho"
+        android:id="@+id/tv_soLuong_Top10_NhapKho"
         android:layout_width="0dp"
         android:layout_weight="1"
         android:layout_height="wrap_content"

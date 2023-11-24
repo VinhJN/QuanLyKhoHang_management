@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/menu_ql_hoa_don"
-        android:icon="@drawable/hoadon"
-        android:title="Quản lý hóa đơn" />
-    <item
         android:id="@+id/menu_ql_the_loai"
         android:icon="@drawable/theloai"
         android:title="Quản lý loại sản phẩm" />
@@ -13,9 +9,17 @@
         android:icon="@drawable/sanpham"
         android:title="Quản lý Sản phẩm" />
     <item
-        android:id="@+id/menu_ql_taikhoan"
+        android:id="@+id/menu_ql_hoa_don"
+        android:icon="@drawable/hoadon"
+        android:title="Quản lý hóa đơn" />
+    <item
+        android:id="@+id/menu_ql_hoaDonChiTiet"
+        android:icon="@drawable/hoadon"
+        android:title="Quản lý hóa đơn chỉ tiết" />
+    <item
+        android:id="@+id/menu_ql_thanhVien"
         android:icon="@drawable/nhanvien"
-        android:title="Quản lý tài khoản" />
+        android:title="Quản lý thành viên" />
     <group android:checkableBehavior="single">
         <item android:title="Thống kê">
             <menu>
@@ -41,6 +45,10 @@
     <group android:checkableBehavior="single">
         <item android:title="Người dùng">
             <menu>
+                <item
+                    android:id="@+id/menu_them_nguoi_dung"
+                    android:icon="@drawable/nhanvien"
+                    android:title="Thêm người dùng" />
                 <item
                     android:id="@+id/menu_doi_mat_khau"
                     android:icon="@drawable/doimatkhau"

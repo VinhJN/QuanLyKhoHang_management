@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#72C1FF"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="Thể Loại"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/edIdTheLoai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mã Loại"
+                android:minHeight="48dp" />
+
+            <EditText
+                android:id="@+id/edTenTheLoai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tên Loại"
+                android:minHeight="48dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btnSaveTheLoai"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="#0079DA"
+                    android:textSize="20sp"
+                    android:text="LƯU"
+                    android:textColor="@color/black"
+                    app:backgroundTint="@null" />
+                <Button
+                    android:id="@+id/btnCancelTheLoai"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="#0079DA"
+                    android:textSize="20sp"
+                    android:text="HỦY"
+                    android:textColor="@color/black"
+                    app:backgroundTint="@null" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

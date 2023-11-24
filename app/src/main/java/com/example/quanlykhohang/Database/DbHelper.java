@@ -17,13 +17,14 @@ public class DbHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         String createTableUser = "CREATE TABLE User (" +
-                "id_User INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL," +
-                "username TEXT NOT NULL," +
+                "id_User TEXT PRIMARY KEY NOT NULL," +
                 "password TEXT NOT NULL," +
                 "fullname TEXT NOT NULL," +
-                "email TEXT NOT NULL)";
+                "email TEXT NOT NULL," +
+                "role INTERGER NOT NULL)";
         db.execSQL(createTableUser);
-
+        String insertDefaultUser = "INSERT INTO User (id_User, password,fullname,email,role) VALUES ('admin', 'admin','Bùi Quang Vinh','vinh231124@gmail.com',0)";
+        db.execSQL(insertDefaultUser);
         String createTableTheLoai = "CREATE TABLE TheLoai (" +
                 "id_theLoai INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL," +
                 "name TEXT NOT NULL)";
@@ -34,13 +35,14 @@ public class DbHelper extends SQLiteOpenHelper {
                 "id_theLoai INTEGER NOT NULL," +
                 "tenSanPham TEXT NOT NULL," +
                 "soLuong INTEGER NOT NULL," +
+                "donGia INTERGER NOT NULL," +
                 "moTa TEXT NOT NULL," +
                 "FOREIGN KEY(id_theLoai) REFERENCES TheLoai(id_theLoai))";
         db.execSQL(createTableSanPham);
 
         String createTableHoaDon = "CREATE TABLE HoaDon (" +
                 "id_hoaDon INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL," +
-                "id_User INTEGER NOT NULL," +
+                "id_User TEXT NOT NULL," +
                 "soHoaDon INTEGER NOT NULL," +
                 "loaiHoaDon TEXT NOT NULL," +
                 "ngayThang TEXT NOT NULL," +
